@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Throtle Therapy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header" id="header">
+		<nav>
+			<h1>THROTLE THERAPY</h1>
+			<ul>
+				<li><a href="#" id="r34">Nissan Skyline R34</a></li>
+				<li><a href="#" id="rx7">Mazda RX7 Veilside</a></li>
+				<li><a href="#" id="mk4">Toyota Supra MK4</a></li>
+				<li><a href="#" id="evo9">Mitsubishi Lancer Evolution IX</a></li>
+			</ul>
+			<a href="#" class="btn">Choose Your Car</a>
+		</nav>
+
+
+		<div class="info">
+			<div><h2>4.6 s</h2>
+			<p>0-60 mph</p>
+		</div>
+		<div>
+			<h2>340km/h</h2>
+			<p>Top Speed</p>
+		</div>
+		<div>
+			<h2>Quarter Mile</h2>
+			<p>Max Range</p>
+		</div>
+		<div class="line">
+		</div>
+		<div>
+			<h2 id="model">Nissan Skyline R34</h2>
+		</div>
+
+		
+
+		</div>
+	</div>
+
+	<script>
+		var header = document.getElementById('header')
+		var ms = document.getElementById('r34')
+		var m3 = document.getElementById('rx7')
+		var mx = document.getElementById('mk4')
+		var my = document.getElementById('evo9')
+		var model = document.getElementById('model')
+
+		ms.onclick = function() {
+			header.style.backgroundImage = "url(skyline.jpg)";
+			model.innerHTML = "Nissan Skyline R34";
+			
+		}
+		m3.onclick = function() {
+			header.style.backgroundImage = "url(veilside.jpg)";
+			model.innerHTML = "Mazda RX7 Veilside";
+			
+		}
+		mx.onclick = function() {
+			header.style.backgroundImage = "url(supra.jpg)";
+			model.innerHTML = "Toyota Supra MK4";
+			
+		}
+		my.onclick = function() {
+			header.style.backgroundImage = "url(evo.jpg)";
+			model.innerHTML = "Mitsubishi Lancer Evo IX";
+		}
+	</script>
+
+</body>
+</html>
